@@ -1,0 +1,67 @@
+{
+  "engines": {
+    "node": "16.18.0"
+  },
+  "//scripts": {
+    "dev": "run the application locally",
+    "build": "compile the application code",
+    "start": "start the compiled application code",
+    "lint": "lint the application code",
+    "lint:fix": "lint the application code and fix any detected issues",
+    "preinstall": "force the developer to use yarn"
+  },
+  "scripts": {
+    "dev": "ts-node --require dotenv/config ./src/index.ts dotenv_config_path=./.env.development.local",
+    "build": "tsc",
+    "start": "node --require dotenv/config ./dist/index.js dotenv_config_path=./.env.development.local",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preinstall": "npx only-allow yarn",
+    "prepare": "husky install"
+  },
+  "//dependencies": {
+    "pino": "solid node logger to replace console.log"
+  },
+  "dependencies": {
+    "pino": "^8.7.0"
+  },
+  "//devDependencies": {
+    "@swc/core": "using with ts-node to speed up local development",
+    "@swc/helpers": "using with ts-node to speed up local development",
+    "@types/node": "should match .nvmrc and engines.node",
+    "@typescript-eslint/eslint-plugin": "for linting typescript",
+    "@typescript-eslint/parser": "for linting typescript",
+    "dotenv": "for injecting environment variables into the application",
+    "eslint": "for linting ecmascript",
+    "eslint-config-prettier": "allows eslint to play nicely with eslint",
+    "eslint-import-resolver-typescript": "allows eslint-plugin-import to play nicely with typescript",
+    "eslint-plugin-import": "used to sort imports in a particular manner",
+    "eslint-plugin-unused-imports": "used to flag and remove unused imports",
+    "lint-staged": "code actions for staged files in git",
+    "pino-pretty": "prettifies pino in development",
+    "prettier": "for formatting application code",
+    "ts-node": "to easily run typescript in a dev environment",
+    "typescript": "typescript > javascript (currently locked <4.9.0 due to typescript-eslint)",
+    "zod": "for any data validation"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.3.18",
+    "@swc/helpers": "^0.4.13",
+    "@types/node": "16.18.0",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "pino-pretty": "^9.1.1",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "4.8.4",
+    "zod": "^3.19.1"
+  }
+}
