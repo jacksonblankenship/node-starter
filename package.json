@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "16.18.0"
+    "node": "18.15.0"
   },
   "//scripts": {
     "dev": "run the application locally",
