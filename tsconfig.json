@@ -5,7 +5,7 @@
     "removeComments": true,
     "outDir": "dist"
     // uncomment for dom support (e.g. puppeteer scripts)
-    // "lib": ["DOM"]
+    // "lib": ["DOM", "DOM.Iterable"],
   },
   "ts-node": {
     "swc": true,
