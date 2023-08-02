@@ -8,7 +8,7 @@
     "start": "node --require dotenv/config ./dist/index.js dotenv_config_path=./.env.development.local",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "preinstall": "npx only-allow yarn",
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install"
   },
   "dependencies": {
