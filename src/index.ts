@@ -1,4 +1,4 @@
-import env from './utils/env';
+import { env } from './utils/env';
 import logger from './utils/logger';
 
 (async () => {

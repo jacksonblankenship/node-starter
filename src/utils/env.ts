@@ -1,7 +1,9 @@
+import { createEnv } from '@t3-oss/env-core';
 import { z } from 'zod';
 
-const envSchema = z.object({
-  EXAMPLE_VAR: z.string().min(1),
+export const env = createEnv({
+  server: {
+    EXAMPLE_VAR: z.string().min(1),
+  },
+  runtimeEnv: process.env,
 });
-
-export default envSchema.parse(process.env);

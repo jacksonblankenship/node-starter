@@ -1,16 +1,13 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
   "compilerOptions": {
-    "allowJs": false,
-    "removeComments": true,
-    "outDir": "dist"
-    // uncomment for dom support (e.g. puppeteer scripts)
-    // "lib": ["DOM", "DOM.Iterable"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
-  "ts-node": {
-    "swc": true,
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  }
+  "include": ["src"]
 }
