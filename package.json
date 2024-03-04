@@ -9,7 +9,7 @@
     "start": "node --require dotenv/config ./dist/index.js dotenv_config_path=./.env"
   },
   "dependencies": {
-    "pino": "^8.16.2"
+    "pino": "^8.19.0"
   },
   "devDependencies": {
     "@swc/core": "^1.4.2",
