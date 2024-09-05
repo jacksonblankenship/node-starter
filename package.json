@@ -6,7 +6,7 @@
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "node --require dotenv/config ./dist/index.js dotenv_config_path=./.env"
   },
   "dependencies": {
