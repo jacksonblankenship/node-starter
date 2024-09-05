@@ -7,5 +7,5 @@
     }
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["preinstall", "packagejson"]
+  "cSpell.words": ["packagejson", "preinstall", "tseslint"]
 }

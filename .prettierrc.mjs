@@ -1,5 +1,8 @@
-/** @type {import("prettier").Config} */
-const config = {
+/**
+ * @see https://prettier.io/docs/en/configuration.html
+ * @type {import("prettier").Config}
+ */
+export const config = {
   arrowParens: 'avoid',
   bracketSameLine: true,
   bracketSpacing: true,
@@ -8,4 +11,4 @@ const config = {
   plugins: ['prettier-plugin-packagejson'],
 };
 
-module.exports = config;
+export default config;
