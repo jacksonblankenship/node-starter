@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "ES2022",
     "module": "esnext",
     "moduleResolution": "Bundler",
     "strict": true,
-    "noEmit": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "sourceMap": true
   },
   "include": ["src"]
 }

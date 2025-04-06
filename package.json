@@ -1,8 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsx --require dotenv/config ./src/index.ts dotenv_config_path=./.env",
+    "build": "rollup --config",
+    "dev": "tsx watch --require dotenv/config ./src/index.ts dotenv_config_path=./.env",
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -15,6 +15,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@types/node": "22.14.0",
     "dotenv": "^16.4.7",
     "eslint": "^9.24.0",
@@ -23,10 +25,12 @@
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.10",
+    "rollup": "^4.39.0",
     "tsx": "^4.19.3",
     "typescript": "5.8.3",
     "typescript-eslint": "^8.29.0"
   },
+  "packageManager": "pnpm@10.4.0+sha1.896bdea7e92d0a37e53829d6ec47871e5c750419",
   "engines": {
     "node": "22.8.0"
   }
