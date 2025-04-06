@@ -6,6 +6,5 @@
       "source.fixAll.eslint": "explicit"
     }
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["packagejson", "preinstall", "tseslint"]
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
